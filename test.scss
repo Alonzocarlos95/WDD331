@@ -1,0 +1,309 @@
+//google fonts
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Shadows+Into+Light+Two&display=swap');
+
+//varibles
+$color-1: #350613; // Dark Sienna - Action color
+$color-2: #A63323; // red
+$color-3: #9EA020; // green
+$color-4: #8C6B47; // brown
+$color-5: #FAF4DB; // beige
+$breakpoint-tablet: 850px;
+$breakpoint-small: 500px;
+
+
+
+//Large Screen & All-----------------------------------------------------------------------------
+
+body{
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: $color-5;
+}
+
+header {
+	background-color: #A63323;
+  background-image: repeating-linear-gradient(transparent, transparent 50px, rgba(0, 0, 0, 0.4) 50px, rgba(0, 0, 0, 0.4) 53px, transparent 53px, transparent 63px, rgba(0, 0, 0, 0.4) 63px, rgba(0, 0, 0, 0.4) 66px, transparent 66px, transparent 116px, rgba(0, 0, 0, 0.5) 116px, rgba(0, 0, 0, 0.5) 166px, rgba(255, 255, 255, 0.2) 166px, rgba(255, 255, 255, 0.2) 169px, rgba(0, 0, 0, 0.5) 169px, rgba(0, 0, 0, 0.5) 179px, rgba(255, 255, 255, 0.2) 179px, rgba(255, 255, 255, 0.2) 182px, rgba(0, 0, 0, 0.5) 182px, rgba(0, 0, 0, 0.5) 232px, transparent 232px), repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0, 0, 0, 0.4) 50px, rgba(0, 0, 0, 0.4) 53px, transparent 53px, transparent 63px, rgba(0, 0, 0, 0.4) 63px, rgba(0, 0, 0, 0.4) 66px, transparent 66px, transparent 116px, rgba(0, 0, 0, 0.5) 116px, rgba(0, 0, 0, 0.5) 166px, rgba(255, 255, 255, 0.2) 166px, rgba(255, 255, 255, 0.2) 169px, rgba(0, 0, 0, 0.5) 169px, rgba(0, 0, 0, 0.5) 179px, rgba(255, 255, 255, 0.2) 179px, rgba(255, 255, 255, 0.2) 182px, rgba(0, 0, 0, 0.5) 182px, rgba(0, 0, 0, 0.5) 232px, transparent 232px), repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0, 0, 0, 0.2) 2px, rgba(0, 0, 0, 0.2) 3px, transparent 3px, transparent 5px, rgba(0, 0, 0, 0.2) 5px);
+height: 250px;
+  margin-left: -12.5%;
+  margin-right: -12.5%;
+  h1{
+    color: white;
+      font-size:6em;
+    margin:0 10% ;
+  }
+  h2{
+     color: white;
+      font-size:2em;
+    margin:0 31% ;   
+  }
+
+}
+
+h1{
+  font-family: "Shadows Into Light Two", cursive;
+    color: white;
+      font-size:6em;
+    margin:0 10% ;
+  }
+  h2{
+    font-family: "Shadows Into Light Two", cursive;
+     color: white;
+      font-size:2em;
+    margin:0 31% ;   
+  }
+.summary{
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  font-size: 10pt;
+  color: black;
+  padding: 5px;
+  margin:10px;
+  
+  
+}
+  
+ .preamble, .explanation, .participation, .benefits, .requirements{
+  Background-color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 12pt;
+  color: $color-2;
+  padding: 60px;
+  margin:20px;
+    margin-right: auto;
+  margin-left: auto;
+  &:after{
+  background-image: url(/cutRedLeaf.37ba8346.svg);
+  background-color: red;
+  width:100%;
+  height:50px;
+}
+  h3{
+    font-family: "Shadows Into Light Two", cursive;
+    font-size: 20pt;
+    line-height: 10pt;
+    text-align: center;
+  }
+    
+  }
+
+footer{
+  background-color: black;
+  color: white;
+  height: 60px;
+  margin-left: -12.5%;
+  margin-right: -12.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 2em;
+
+  a{
+    color: white;
+    font-family: "Shadows Into Light Two", cursive;
+    text-decoration: none;
+    margin:20px;
+    &:hover{
+    color: $color-3 !important;
+    text-decoration: underline;
+  }
+  }
+  
+}
+.wrapper{
+  background-color: black;
+  margin-left: -12.5%;
+  margin-right: -12.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+ #design-selection, #design-archives, #zen-resources{
+   flex-direction:column;
+   color: white;
+   margin-right: auto;
+   margin-left: auto;
+   width: 30%;
+   
+    h3{
+      color: $color-3;
+      font-family: "Shadows Into Light Two", cursive;
+      font-size: 20pt;
+      line-height: 10pt;
+      text-align: center;
+      
+    }
+    ul{
+      list-style-type: none;
+      text-align: center;
+      padding-inline-start: 0px !important;
+    }
+    ul li {
+      margin-bottom:15px;
+      font-family: "Shadows Into Light Two", cursive;
+      font-size: 1.2em;
+      &:hover > a, &:hover{
+        color: $color-2 !important;
+      }
+    }
+    ul li a{
+      color: white;
+      text-decoration: none;
+
+      
+    }
+
+}
+a{
+  color: $color-2;
+    font-weight: 800;
+    text-decoration: none;
+  abbr{
+    font-style: normal;
+  }
+}
+abbr{
+  text-decoration: none;
+  font-style: italic;
+}
+.design-archives { order: 1; } 
+  .design-selection    { order: 2; }
+  .zen-resources { order: 3; }
+.extra1:after, .extra2:after, .extra3:after, .extra4:after, .extra5:after{
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+}
+.extra1:after {
+    background: url(cutRedLeaf.svg) center top no-repeat;
+    transform: rotate(30deg);
+    content: '';
+    height: 100px;
+    left: 85%;
+    position: absolute;
+    top: 47%;
+    width: 100px;
+    z-index: 1;
+}
+.extra2:after {
+    background: url(cutRedLeaf.svg) center top no-repeat;
+    transform: rotate(-30deg);
+    content: '';
+    height: 100px;
+    left: 6%;
+    position: absolute;
+    top: 94%;
+    width: 100px;
+    z-index: 1;
+}
+.extra3:after {
+    background: url(cutRedLeaf.svg) center top no-repeat;
+    transform: rotate(30deg);
+    content: '';
+    height: 100px;
+    left: 85%;
+    position: absolute;
+    top: 130%;
+    width: 100px;
+    z-index: 1;
+}
+.extra4:after {
+    background: url(cutRedLeaf.svg) center top no-repeat;
+    transform: rotate(-30deg);
+    content: '';
+    height: 100px;
+    left: 6%;
+    position: absolute;
+    top: 170%;
+    width: 100px;
+    z-index: 1;
+}
+.extra5:after {
+    background: url(cutRedLeaf.svg) center top no-repeat;
+    transform: rotate(30deg);
+    content: '';
+    height: 100px;
+    left: 85%;
+    position: absolute;
+    top: 200%;
+    width: 100px;
+    z-index: 1;
+}
+
+
+//Middle Screens----------------------------------------------------------------------------
+@media (max-width: $breakpoint-tablet ){
+  header{
+    height: 150px;
+    h1{
+      font-size:3em;
+      margin: 0 10% ;
+  }
+  h2{
+      font-size:1.5em;
+      margin: 0 31% ;   
+  }
+
+  }
+  .wrapper {
+  display: flex;  
+  flex-flow: wrap nowrap;
+  font-weight: bold;
+  text-align: center;
+}
+  .wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+#design-selection, #design-archives, #zen-resources{
+      width: 30%;
+    h3{
+      font-size:1.3em;
+    }
+   ul li{
+    font-size:1em;
+  }
+  
+}
+  
+}  
+  //Small screens-----------------------------------------------------------------------------------
+@media (max-width: $breakpoint-small ){
+  header{
+    height: 100px;
+        h1{
+          font-size:2em;
+          margin: 0 10% ;
+      }
+      h2{
+          font-size:1em;
+          margin: 0 31% ;   
+      }  
+  }
+  .summary p{
+      font-size:.9em;
+    }
+  body{
+      display: block;
+  }
+  h1, h2 {
+      font-family: "Shadows Into Light Two", cursive;
+      color: $color-1;
+  }  
+
+  #design-selection, #design-archives, #zen-resources{
+        width: 50% !important;
+        h3{
+          font-size:1.2em;
+              line-height: 1.2em;
+        }
+       ul li{
+        font-size:.8em;
+      }
+  }
+
+  
+ 
+}

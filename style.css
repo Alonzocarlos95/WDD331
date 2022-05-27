@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Shadows+Into+Light+Two&display=swap");
+
+body::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  min-height: 800px;
+  opacity: .7;
+  background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAoCAYAAABXRRJPAAAD5ElEQVRYhc2ZWchVVRTHf59D5TxrOJRjOOQQ4qcohgqVA1FhgoWzPojiQGo+qIQTqKCYImihUpGCig9aRimYog8hEcVnqCg44NCnoL44m7L0f2F7POfscw6He+8fLmefPa7/3WuvvdY6FTv6dqLI+BjoCqzKa9lSkLgOvAI0ymvCGnlN5EErYAiwE2gONAQ+yWtyH4mKnNaZChwGxjp1e4Gf85jcR2IAsDrFfDUjiH8a0X9kirkj4SNxDvgSWJNwPiOwFfhcc78ObADeiRkzwyk3zbL7tTzt1cC/wAKgPXAWWArcj+j/CKgP/Cjr0xJ41bPGJqA/UA84CHyTNwlDbT3H6NnFKXcEzgP/O/2Pqb1dCjkm6DkNeJJi3DP4SAyT0C5Mv5dLXWYCjQPtUbvkw9fArSwDo0j0BiqBFRHtiwOk9jjvDTNReK62STACqAIuFfpGHezG0s2WCSZdF3hvkJHE1Yj6OtKGujpnB4K7HUXiCDAl4eKm+6Ocd99BjkLhn23jtNfV/XIGuAAslCGoTkLCsB24llCAr5zykAwEzOr9o/JxYAcwS8L3V31zPf8IDvbdE38lFKIfMFnlyoRjXGyWhXsfeBP4TPdLm5C+7wUrfNapbwpBtgGDJExan2ynnj8k6DseeCDj8kxT4hbbmPBgu5iagcAd4IrOYNL1hruH292JBrL7lbrEeqcUJiu+kzXcmnD8bVmru2EkHunUW8DSrUgEDIOBEyn6H3cJENj6u9Lr7sD6/GT04m2gc4r+fYJqV3N066ZhHX8FOhVRpdLA1H6iokNTq5Nxh3CCQslyhO3ESqCtOYw+SzKsTEn8BrQAlgEPfSSqZGrLCVuAD4AbBZmS2PTZQV+lhLBbfHpw+SSJgg4xHmYxYfHGnLD1wtyOHnIfBgJDgTfKgMAhYG5UYy1lHMYBbymgCUZypcaJMKfPRQ1lNE7J1S03Aig+8ZI4LVNl2YwPU8QQxUIvmVSLOdbq/SUSLn7SLX27zIggD+IL4G/JOaKQowqzTtVyjcsZoxRr2zGYHmadKpTBMP9+XpkS+R3YLxJVYSSeKH0yX7HF4BIIGYeFwbRqXHjaOuwQlRCW2/peO/AC4kjUVjx7RXnS9vL933UyEMXCPid1+hLiSFzQr4CjTnlRTHYwKy4Cu4HHQE/FC9cVrP0SN2eShHIY+uVMABGYn2Vgls9d3wIfZVnMg0lS29RIsxOWUlyi9LvZ6P9U/5ryQDe19S3k+Vp68548gGaKxgoZ9PohH1Osj5lM8+FeSAT4kIaE+TB/6t+yXFFamNAmvKGJEhJmIExo+zBpspgHvUsxw+VECwBPAW2NoZQmZq3fAAAAAElFTkSuQmCC") 50% 80%, url('data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAApCAYAAAB3LnrpAAAEEklEQVRogc2ZW6wNVxjHf8dxQpui7tK4pFqXRN3qVkdFkdRdpFQUffBQSnkQQYQ0KUKEEipCE31wC+pB4hoeSnLQxKWpk6aNKGni2rQlaJFyyCf/szNWZmavGfts8092Zs+ab818/1nru07Jpqk9eAlYBOwALhXq0bVeAon+wBKgWyFvWiwidYEGQDmwW2NTC/mAYhFpDlwETgAtNDYEqAD6FuIB+YjUB2YU4DnvAU1CxvsBwwpw/7xE/gO+AY4muOdnwNzAeSdgZYz8h875KwmelUPpqB5vxF2vAtoBY4B3gGbAQ+BmzBxTfAMwApgMLAdej5Fvqe3VUHZjnuxGUiK1PWQe6DhOvwtAB42VyZDvBuRP69grgR5D9PsN+DzBvBx8jH20c94eWK19fxwY6lyvSqOI8AXwKM3EKCJ1gMbARm0nF7OBU9oSY5xraYk8Bs57yrZ1B6KI2H79EZjmcdOJQNfAeQNPZVxcAW5FXKunYymwC/jaFYgiYsa2NYESiwP/GyaYF8SfWhUXrYGzerHngPHAXlcozkZMuT88lRgRiBNvpSRSqaMlfwfl/T4Fzshz9gG6AE+AQ+7kfMa+z1MJW/J1+l+eTP8czIEgg7cg+ROwBWjqyJWEbd98RMIMPQqfSIlWKUiY2/0FeBOYorGyGPk1btIZF0feBcYmVGi9lj4pDkt+i+c828q3FXBDiZQrwWslGylNoVRJijm7tJ3e95Q3Dzc/OOAS+UAC9VMo8yKYpKzBF6uAq0FZ10aWyVscflHNEmJmIL33wauuTJixX1G0/rnIZJJgkZxCWXW2HOW1HsrQ/y+ygr6wFflOgfIj8rjf3wOuMIuw7GNtdZTPF0e2AzszSKJC+d1m4F880/g5gZokCzBHNEi5WQ4+RK4B2zJCwuqfkWG2GxXZ62rpeuvYp+Z1zAtLYUZFZMjPiLytjPWessyBItAxA8pXo1Kl8N0ogdoq/pcCPYuunj+svXo9Ttps5JgaBcOBHzJGoBoL1aEcHmUOQWM/JG8wN4OB8DXgY+CA6pQFbokR1tc6CQwIK/AzAiMwGJiuitEKr6oo97tbXcYsw1ZpgtpRTaKIfKvOYmVGiexRcVWmBPdIXIV4WZ2LzkVU0AcVspfnEBfZrVLsrrT+ckzPqVg4JmfUP+x5cStyX+7ub3UPGylI9tIb6VdDBB5HlNhfiUwo4ojccc7/kUc7qUb1icLpnsM8YL+6Kc30Av9SC/di3ESfbnwYlhVM9edhSeGv+iVCmk9vexRnagLf5+lnRSLJilibZ5Zs5Et97LFlb6PS+IZkStVOaqOO4CVtkfY6vy976xDSzLM+r0Vu+4pl5UONEbFPcPYpLk0TzoW9eXPtlmlb39g67vZly8oG6/mu8L4T8BSePaultptcAwAAAABJRU5ErkJggg==') 10% 20%, url('data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAApCAYAAAB3LnrpAAAD/UlEQVRogc2ZW6hWRRTHf6fjIQ075i17SEUrFcxLpZlHxdTQ1AzxEpr2IFhC5oN4e1B6UBHyitqDWvagJamBgqEHE1TwhldMRQkvBN4pjdRS0owl/++w2ew9e/buO9/Zf/jY38xeM7P+M7PWrFm77PFq6gJzgA3AxWKN/VQdkOgDzAO6FrPTUhGpDzQCqoBNqvukmAOUikgL4DywH3hBdYOAfUDPYgyQRKQS+LQI47wFNIuo7wUMLkL/iUT+AlYCP6Xo82NgRqDcEVjkkB8YKjdIMVYNkog8lHd5B9gMTAY6J7S5DywEDgN7gZ+Blg75HkA1MAX4GmifhYiP+/0KmBgo/xIYrEKGfCfwvgNwNosywDmgkyYwFXyM/f1QuR2wVPveZvzd0Pt/M5IwTM5CAgeRp4GmwCrg+Yj3U4GD8jjDQ++yEnmkbeiDtr5EGgOHgEkenX4IdAmUG2WiAZeB2zHvntWzHNgILAkLxBG5DqxPocTcwP/GKdoFcVOrEkYr4Jgm9jjwAbA1LOSyEVPuV08lhgbOiZcyEjml5xvAdrntj4CjwCvybuYxHwM7wo2TjH2bpxK25Cv0vyqd/jUwB4JcvB2SJ4B1QPOQXFnU9k0iEmXocRgrJVxnRhzM7Z4B2gATJFPhkF8WDjrrOYRfB0amVOhLLX1aVEt+nWc728p/AOPjiFQpwGspGynPoFRZhjYbtZ16e8qbh5sVrAgTeVsClRmU+T8YB4xK0X4xcCVYEbaRBfIW1ZQWnwXCex88E5aJMvbLOq1PlphMGsyRU6goRMtxXuuBDP2fEivoC1uRb3RQjiDB/V4IuMI8wqKP5YVTPukc+Q74Pock9im+WwvcwzOMn6bLUl5gjqi/YrMa+BC5CnybExJ2/3kvynbjTvb6Wro39exR+zomwkKYYTER8hMiLytivasos58IdMiB8gWcUvroTpyAEXkRmA90K7l6/rAEyDWXtNnIHqA7MATYnTMCBcxWhnJInDlEZVGmK1RxhdF1idNaobVBzxWXDtoFDMgpkQLMpn+UJzsc5343KcuYZzQExigd1SyOyBrg1cA9Om/4QZerCgW4O103xEvKXHTKGQkLT0aHK10nu90UX1NYf8mRcyoV9ig06RM1niv3W6mM4+/KHjbRIdldM9Krlgg8irli9xOZSLi21p+h8i3ggH5H9NGm2JgpT9RGGRybwN80oeddY7mIuLCgFkgY9iqTnzqbn+XTm3mMvhna+WBz1oM4zYqU6WOM2cjnwA0te2tdja9LplzppNbKCF7UFmmn8t+yt/YRyTzL81qG0b5i2fXBX7kU39lt9WxwywpmScKFYTNvrt0ibcsbW8b9OV0btgBfePcE/AfliLIzKJqlVAAAAABJRU5ErkJggg==');
+  background-repeat: no-repeat;
+  animation: falling 10s linear infinite;
+  animation-fill-mode: backwards;
+  /* animation-direction: initial;
+  animation-timing-function: steps(10); */
+  top: 0;
+  left: 0;
+}
+
+@keyframes falling {
+  0% {
+    /* position: fixed; */
+    padding: 0;
+    margin: 0;
+    width: 100px;
+    height: 100px;
+    /* top: -10%; */
+    opacity: 0;
+    transform: translate(0,0) rotateZ(0deg);
+  }
+  10% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+    transform: translate(100px,500px) rotateZ(270deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(150px,800px) rotateZ(360deg);
+    max-width: 30px;
+    max-height: 20px;
+  }
+}
+
+body {
+  position: relative;
+}
+
+body {
+  /* background-image: url("leaf1.svg"); */
+  /* background-repeat: repeat-y; */
+  width: 80%;
+  max-height: 100%;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #FAF4DB;
+}
+
+
+
+header {
+  background-color: #A63323;
+  background-image: repeating-linear-gradient(transparent, transparent 50px, rgba(0, 0, 0, 0.4) 50px, rgba(0, 0, 0, 0.4) 53px, transparent 53px, transparent 63px, rgba(0, 0, 0, 0.4) 63px, rgba(0, 0, 0, 0.4) 66px, transparent 66px, transparent 116px, rgba(0, 0, 0, 0.5) 116px, rgba(0, 0, 0, 0.5) 166px, rgba(255, 255, 255, 0.2) 166px, rgba(255, 255, 255, 0.2) 169px, rgba(0, 0, 0, 0.5) 169px, rgba(0, 0, 0, 0.5) 179px, rgba(255, 255, 255, 0.2) 179px, rgba(255, 255, 255, 0.2) 182px, rgba(0, 0, 0, 0.5) 182px, rgba(0, 0, 0, 0.5) 232px, transparent 232px), repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0, 0, 0, 0.4) 50px, rgba(0, 0, 0, 0.4) 53px, transparent 53px, transparent 63px, rgba(0, 0, 0, 0.4) 63px, rgba(0, 0, 0, 0.4) 66px, transparent 66px, transparent 116px, rgba(0, 0, 0, 0.5) 116px, rgba(0, 0, 0, 0.5) 166px, rgba(255, 255, 255, 0.2) 166px, rgba(255, 255, 255, 0.2) 169px, rgba(0, 0, 0, 0.5) 169px, rgba(0, 0, 0, 0.5) 179px, rgba(255, 255, 255, 0.2) 179px, rgba(255, 255, 255, 0.2) 182px, rgba(0, 0, 0, 0.5) 182px, rgba(0, 0, 0, 0.5) 232px, transparent 232px), repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0, 0, 0, 0.2) 2px, rgba(0, 0, 0, 0.2) 3px, transparent 3px, transparent 5px, rgba(0, 0, 0, 0.2) 5px);
+  height: 250px;
+  margin-left: -12.5%;
+  margin-right: -12.5%;
+}
+
+
+
+header h1 {
+  color: white;
+  font-size: 6em;
+  margin: 0 10%;
+}
+header h2 {
+  color: white;
+  font-size: 2em;
+  margin: 0 31%;
+}
+
+h1 {
+  font-family: "Shadows Into Light Two", cursive;
+  color: white;
+  font-size: 6em;
+  margin: 0 10%;
+}
+
+h2 {
+  font-family: "Shadows Into Light Two", cursive;
+  color: white;
+  font-size: 2em;
+  margin: 0 31%;
+}
+
+.summary {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  font-size: 10pt;
+  color: black;
+  padding: 5px;
+  margin: 10px;
+}
+
+
+.preamble, .explanation, .participation, .benefits, .requirements {
+  Background-color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 12pt;
+  color: #A63323;
+  padding: 10px;
+  margin: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.preamble:after, .explanation:after, .participation:after, .benefits:after, .requirements:after {
+  background-image: url(/cutRedLeaf.37ba8346.svg);
+  background-color: red;
+  width: 100%;
+  height: 50px;
+}
+.preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3 {
+  font-family: "Shadows Into Light Two", cursive;
+  font-size: 20pt;
+  line-height: 10pt;
+  text-align: center;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  height: 60px;
+  margin-left: -12.5%;
+  margin-right: -12.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 2em;
+}
+footer a {
+  color: white;
+  font-family: "Shadows Into Light Two", cursive;
+  text-decoration: none;
+  margin: 20px;
+}
+footer a:hover {
+  color: #9EA020 !important;
+  text-decoration: underline;
+}
+
+.wrapper {
+  background-color: black;
+  margin-left: -12.5%;
+  margin-right: -12.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#design-selection, #design-archives, #zen-resources {
+  flex-direction: column;
+  color: white;
+  margin-right: auto;
+  margin-left: auto;
+  width: 30%;
+}
+#design-selection h3, #design-archives h3, #zen-resources h3 {
+  color: #9EA020;
+  font-family: "Shadows Into Light Two", cursive;
+  font-size: 20pt;
+  line-height: 10pt;
+  text-align: center;
+}
+#design-selection ul, #design-archives ul, #zen-resources ul {
+  list-style-type: none;
+  text-align: center;
+  padding-inline-start: 0px !important;
+}
+#design-selection ul li, #design-archives ul li, #zen-resources ul li {
+  margin-bottom: 15px;
+  font-family: "Shadows Into Light Two", cursive;
+  font-size: 1.2em;
+}
+#design-selection ul li:hover > a, #design-selection ul li:hover, #design-archives ul li:hover > a, #design-archives ul li:hover, #zen-resources ul li:hover > a, #zen-resources ul li:hover {
+  color: #A63323 !important;
+}
+#design-selection ul li a, #design-archives ul li a, #zen-resources ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+a {
+  color: #A63323;
+  font-weight: 800;
+  text-decoration: none;
+}
+a abbr {
+  font-style: normal;
+}
+
+abbr {
+  text-decoration: none;
+  font-style: italic;
+}
+
+.design-archives {
+  order: 1;
+}
+
+.design-selection {
+  order: 2;
+}
+
+.zen-resources {
+  order: 3;
+}
+
+@media (max-width: 850px) {
+  header {
+    height: 150px;
+  }
+  header h1 {
+    font-size: 3em;
+    margin: 0 10%;
+  }
+  header h2 {
+    font-size: 1.5em;
+    margin: 0 31%;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-flow: wrap nowrap;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+  }
+
+  #design-selection, #design-archives, #zen-resources {
+    width: 30%;
+  }
+  #design-selection h3, #design-archives h3, #zen-resources h3 {
+    font-size: 1.3em;
+  }
+  #design-selection ul li, #design-archives ul li, #zen-resources ul li {
+    font-size: 1em;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    height: 100px;
+  }
+  header h1 {
+    font-size: 2em;
+    margin: 0 10%;
+  }
+  header h2 {
+    font-size: 1em;
+    margin: 0 31%;
+  }
+
+  .summary p {
+    font-size: .9em;
+  }
+
+  body {
+    display: block;
+  }
+
+  h1, h2 {
+    font-family: "Shadows Into Light Two", cursive;
+    color: #350613;
+  }
+  .preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3 {
+    line-height: 30pt;
+  }
+  #design-selection, #design-archives, #zen-resources {
+    width: 50% !important;
+  }
+  #design-selection h3, #design-archives h3, #zen-resources h3 {
+    font-size: 1.2em;
+    line-height: 5.2em;
+  }
+  #design-selection ul li, #design-archives ul li, #zen-resources ul li {
+    font-size: .8em;
+  }
+}
